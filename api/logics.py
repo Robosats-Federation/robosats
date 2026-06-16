@@ -894,6 +894,10 @@ class Logics:
         if order.status == Order.Status.FAI:
             if order.payout.status != LNPayment.Status.EXPIRE:
                 return False, new_error(3001)
+        if order.status == Order.Status.PAY:  
+            return False, new_error(3001)
+        if order.payout and order.payout.status == LNPayment.Status.FLIGHT:  
+            return False, new_error(3001)
 
         # cancel onchain_payout if existing
         cls.cancel_onchain_payment(order)
