@@ -21,7 +21,7 @@ You can donate the following ways:
     <script src="https://embed.twentyuno.net/js/app.js"></script>
   </div>
 
- - **Directly tip the developer working on the features you like.** Check the [active PRs](https://github.com/RoboSats/robosats/pulls) and show your support to the developers with via Lightning tips. Simply write a message, for example "@developer_name, I would like to fund your development of this feature with 6000 Sats". The developer should reply with an LN invoice with a long expiration time.
+ - **Directly tip the developer working on the features you like.** Check the [active PRs](https://github.com/Robosats-Federation/robosats/pulls) and show your support to the developers with via Lightning tips. Simply write a message, for example "@developer_name, I would like to fund your development of this feature with 6000 Sats". The developer should reply with an LN invoice with a long expiration time.
 
  - **Tip the RoboSats devfund via Paynym (BIP47): [{{site.robosats.paynym}}](https://paynym.is/{{site.robosats.paynym}})** paynym code:
 

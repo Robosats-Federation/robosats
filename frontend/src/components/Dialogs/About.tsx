@@ -44,7 +44,7 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
           </p>
           <p>
             {t('RoboSats is an open source project ')}{' '}
-            <Link href='https://github.com/RoboSats/robosats'>{t('(GitHub).')}</Link>
+            <Link href='https://github.com/Robosats-Federation/robosats'>{t('(GitHub).')}</Link>
           </p>
         </Typography>
 
@@ -65,11 +65,11 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
                   'At no point, AnonymousAlice01 and BafflingBob02 have to entrust the bitcoin funds to each other. In case they have a conflict, the RoboSats coordinator will help resolving the dispute.',
                 )}
                 {t('You can find a step-by-step description of the trade pipeline in ')}
-                <Link target='_blank' href='https://learn.robosats.org/docs/trade-pipeline/'>
+                <Link target='_blank' href='https://learn.robosats.app/docs/trade-pipeline/'>
                   {t('How it works')}
                 </Link>
                 .{' ' + t('You can also check the full guide in ')}
-                <Link target='_blank' href='https://learn.robosats.org/read/en'>
+                <Link target='_blank' href='https://learn.robosats.app/read/en'>
                   {t('How to use')}
                 </Link>
                 .
@@ -222,7 +222,7 @@ const AboutDialog = ({ open, onClose }: Props): React.JSX.Element => {
                 {t(
                   'You can build more trust on the RoboSats and coordinator infrastructure by inspecting the source code.',
                 )}{' '}
-                <Link href='https://github.com/RoboSats/robosats'> {t('Project source code')}</Link>
+                <Link href='https://github.com/Robosats-Federation/robosats'> {t('Project source code')}</Link>
                 .{' '}
               </p>
             </Typography>

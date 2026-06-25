@@ -14,9 +14,9 @@ src: "_pages/docs/pt/00-quick-start/03-access.md"
 
 Uma forma segura e muito privada de usar o RoboSats é através do endereço Onion. Você precisa do [navegador TOR](/docs/pt/tor/) e acesse pelo link:
 
-> [<b>robosats</b>6tkf3eva7x2voqso3a5wcorsnw34j<br/>veyxfqi2fu7oyheasid.onion](http://robosats6tkf3eva7x2voqso3a5wcorsnw34jveyxfqi2fu7oyheasid.onion/)
+> [<b>robosats</b>6tkf3eva7x2voqso3a5wcorsnw34j<br/>veyxfqi2fu7oyheasid.onion](http://robosats7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion/)
 
-Você também pode abrir o atalho [dex.robosats.com](https://dex.robosats.com) no navegador Tor e ser redirecionado instantaneamente para o site Onion.
+Você também pode abrir o atalho [dex.robosats.app](https://dex.robosats.app) no navegador Tor e ser redirecionado instantaneamente para o site Onion.
 
 **Privado:** Sua conexão é criptografada de ponta a ponta e retransmitida por várias camadas de nós, o que dificultará o rastreamento.
 {: .notice--primary}
@@ -26,13 +26,13 @@ Você também pode abrir o atalho [dex.robosats.com](https://dex.robosats.com) n
 
 Você pode acessar o coordenador Experimental através deste endereço Onion. Você precisa do [navegador TOR](/docs/tor/) e acessar através do link:
 
-> [<b>robosats</b>6tkf3eva7x2voqso3a5wcorsnw34j<br/>veyxfqi2fu7oyheasid.onion](http://robosats6tkf3eva7x2voqso3a5wcorsnw34jveyxfqi2fu7oyheasid.onion/)
+> [<b>robosats</b>6tkf3eva7x2voqso3a5wcorsnw34j<br/>veyxfqi2fu7oyheasid.onion](http://robosats7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion/)
 
 ## <img style='width:32px;height:32px' src='/assets/vector/tor.svg'/> Privado com aplicativo Android habilitado para TOR
 
 RoboSats pode ser acessado com segurança e privacidade por meio do aplicativo Android. O aplicativo está disponível na página de lançamento do RoboSats GitHub:
 
-> [Baixe a <b>versão mais recente</b> do APK RoboSats universal para Android](https://github.com/RoboSats/robosats/releases)
+> [Baixe a <b>versão mais recente</b> do APK RoboSats universal para Android](https://github.com/Robosats-Federation/robosats/releases)
 
 ## <img style='width:36px;height:38px;-webkit-filter:grayscale(1);filter:grayscale(1);' src='/assets/vector/Itoopie.svg'/> De maneira privada com I2P
 
@@ -53,9 +53,9 @@ Se você usar o URL clearnet, deverá presumir que está sendo espionado. No ent
 
 ## <i class="fa-solid fa-person-dots-from-line"></i> Tudo em um URL
 
-Para simplificar, o URL "robosats.org" foi criado para servir como um link completo e fácil de lembrar para navegadores. Se você usar um navegador TOR ou I2P, você será direcionado para o site Onion ou I2P, respectivamente. Caso contrário, você será direcionado para o site inseguro da Clearnet.
+Para simplificar, o URL "robosats.app" foi criado para servir como um link completo e fácil de lembrar para navegadores. Se você usar um navegador TOR ou I2P, você será direcionado para o site Onion ou I2P, respectivamente. Caso contrário, você será direcionado para o site inseguro da Clearnet.
 
-> [<span style="font-size:larger;">robosats.org</span>](https://robosats.org)
+> [<span style="font-size:larger;">robosats.app</span>](https://robosats.app)
 
 ## Outros
 
@@ -68,7 +68,7 @@ Você pode praticar e testar todas as funcionalidades do RoboSats sem perder fun
 
 Existem vários serviços tor2web que servem como espelhos caso um deles não esteja disponível:
 
-> [unsafe.robosats.org](https://unsafe.robosats.org/) <br/>
-> [unsafe.testnet.robosats.org](http://unsafe.testnet.robosats.org/)
+> [unsafe.robosats.app](https://unsafe.robosats.app/) <br/>
+> [unsafe.testnet.robosats.app](http://unsafe.testnet.robosats.app/)
 
 {% include improve_pt %}

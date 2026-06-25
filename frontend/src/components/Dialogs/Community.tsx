@@ -87,7 +87,7 @@ const CommunityDialog = ({ open = false, onClose }: Props): React.JSX.Element =>
           <ListItemButton
             component='a'
             target='_blank'
-            href='https://github.com/RoboSats/robosats/issues'
+            href='https://github.com/Robosats-Federation/robosats/issues'
             rel='noreferrer'
           >
             <ListItemIcon>

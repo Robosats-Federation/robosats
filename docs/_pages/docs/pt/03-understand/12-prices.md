@@ -17,7 +17,7 @@ Ao fazer uma ordem, existem dois métodos de precificação diferentes disponív
 
 Ao navegar no livro de ordens, o preço bitcoin-fiat das ordens ativas que você vê é automaticamente ajustado para incluir o prêmio correspondente da ordem. Consulte [Entenda > Prêmio](/docs/pt/premium/) para informações adicionais sobre prêmios.
 
-Se uma moeda fiduciária não estiver disponível na RoboSats, então é possível adicionar facilmente uma nova moeda abrindo uma solicitação de Pull Request no [GitHub](https://github.com/RoboSats/robosats)!
+Se uma moeda fiduciária não estiver disponível na RoboSats, então é possível adicionar facilmente uma nova moeda abrindo uma solicitação de Pull Request no [GitHub](https://github.com/Robosats-Federation/robosats)!
 
 _\*\*O método de precificação explícita foi removido como opção por razões técnicas, mas poderia potencialmente retornar em atualizações futuras. Atualmente, a precificação de pedidos é apenas relativa à taxa de mercado._
 
@@ -88,11 +88,11 @@ Sinta-se à vontade para sugerir outros provedores de API. O RoboSats calcula o 
 
 Todas as moedas disponíveis nas APIs yadio.io e blockchain.info devem estar disponíveis também no RoboSats.
 
-Não está vendo uma moeda com a qual deseja operar? É muito fácil para os colaboradores adicionar uma nova moeda abrindo uma solicitação de Pull Request no [GitHub](https://github.com/RoboSats/robosats).
+Não está vendo uma moeda com a qual deseja operar? É muito fácil para os colaboradores adicionar uma nova moeda abrindo uma solicitação de Pull Request no [GitHub](https://github.com/Robosats-Federation/robosats).
 
-Primeiro, verifique o arquivo atual [currencies.json](https://github.com/RoboSats/robosats/blob/main/frontend/static/assets/currencies.json) para confirmar se a moeda que você está procurando realmente está faltando no RoboSats.
+Primeiro, verifique o arquivo atual [currencies.json](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/static/assets/currencies.json) para confirmar se a moeda que você está procurando realmente está faltando no RoboSats.
 
-Se encontrar uma moeda faltando no RoboSats e ela estiver disponível em qualquer uma das duas APIs referenciadas, então você pode editar diretamente os arquivos currencies.json e [FlagsWithProps.tsx](https://github.com/RoboSats/robosats/blob/main/frontend/src/components/FlagWithProps/FlagWithProps.tsx).
+Se encontrar uma moeda faltando no RoboSats e ela estiver disponível em qualquer uma das duas APIs referenciadas, então você pode editar diretamente os arquivos currencies.json e [FlagsWithProps.tsx](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/src/components/FlagWithProps/FlagWithProps.tsx).
 
 Após merge da solicitação de Pull Request, a moeda adicionada estará disponível no RoboSats.
 

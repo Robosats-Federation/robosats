@@ -9,7 +9,7 @@ RoboSats desktop app serves the RoboSats frontend app directly and redirects all
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/RoboSats/robosats.git
+git clone https://github.com/Robosats-Federation/robosats.git
 cd robosats
 ```
 

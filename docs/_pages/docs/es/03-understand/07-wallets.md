@@ -23,7 +23,7 @@ thumbsdown: "<i style='color:#9c27b0' class='fa-solid fa-thumbs-down fa-2xl'></i
 unclear: "<i style='color:#ff9800' class='fa-solid fa-question fa-2xl'></i>"
 bitcoin: "<i class='fa-solid fa-bitcoin-sign'></i>"
 ---
-Esta es una compilación no exhaustiva basada en la experiencia pasada de los usuarios. No hemos probado todas las wallets, si pruebas una wallet que aún no está cubierta, [informa aquí](https://github.com/Robosats/robosats/issues/44).
+Esta es una compilación no exhaustiva basada en la experiencia pasada de los usuarios. No hemos probado todas las wallets, si pruebas una wallet que aún no está cubierta, [informa aquí](https://github.com/Robosats-Federation/robosats/issues/44).
 
 | Wallet | Versión | Dispositivo | UX<sup>1</sup> | Fianzas<sup>2</sup> | Pagos<sup>3</sup> | Comp<sup>4</sup> | Total<sup>5</sup> |
 |:---|:---|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -39,8 +39,8 @@ Esta es una compilación no exhaustiva basada en la experiencia pasada de los us
 |[Mash](https://app.mash.com/wallet)|[Beta](https://mash.com/consumer-experience/)|{{page.laptop}}{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}} | {{page.thumbsup}}|
 |[Muun](#muun-móvil)|[47.3](https://muun.com/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.bad}}|{{page.bad}}|{{page.thumbsdown}}|
 |[Phoenix](#phoenix-móvil)|[35-1.4.20](https://phoenix.acinq.co/)|{{page.phone}}|{{page.good}}|{{page.soso}}|{{page.soso}}|{{page.soso}}|{{page.unclear}}|
-|[SBW](https://github.com/RoboSats/robosats/issues/44#issue-1135544303)|[2.4.27](https://github.com/btcontract/wallet/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
-|[WoS](https://github.com/RoboSats/robosats/issues/44#issue-1135544303)|[1.15.0](https://www.walletofsatoshi.com/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
+|[SBW](https://github.com/Robosats-Federation/robosats/issues/44#issue-1135544303)|[2.4.27](https://github.com/btcontract/wallet/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
+|[WoS](https://github.com/Robosats-Federation/robosats/issues/44#issue-1135544303)|[1.15.0](https://www.walletofsatoshi.com/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
 |[Zeus](#zeus-móvil-lnd-cln-eclair-remote-backend)|[v0.6.0-rc3](https://github.com/ZeusLN/zeus)|{{page.phone}}{{page.remote}}|{{page.soso}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
 
 1. **UX:** ¿Muestra claramente la wallet que hay un pago "en transito" (factura retenida)?
@@ -100,7 +100,7 @@ Desde la version 2.5 no soporta lightning
 Es una interfaz para LND, CLN y Eclair. Funciona como es esperado. Es extremadamente engañoso con una pantalla roja completa "TIME OUT" unos segundos después de enviar el HTLC. Sin embargo, si el usuario consulta en el sitio web, el invoice se bloquea correctamente.
 
 ## <i class="fa-solid fa-code-pull-request"></i> Ayuda a mantener actualizada esta página
-Hay muchas wallets y todas siguen mejorando a la velocidad de la luz. Puedes contribuir al proyecto de código abierto RoboSats probando wallets, editando [el contenido de esta página](https://github.com/Robosats/robosats/tree/main/docs/{{page.src}}) y abriendo un [Pull Request](https://github.com/Robosats/robosats/pulls)
+Hay muchas wallets y todas siguen mejorando a la velocidad de la luz. Puedes contribuir al proyecto de código abierto RoboSats probando wallets, editando [el contenido de esta página](https://github.com/Robosats-Federation/robosats/tree/active-maintenance/docs/{{page.src}}) y abriendo un [Pull Request](https://github.com/Robosats-Federation/robosats/pulls)
 
 ## Información adicional
 

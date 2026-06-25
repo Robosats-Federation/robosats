@@ -18,7 +18,7 @@ Lors de la passation d'un ordre, il existe deux méthodes de tarification diffé
 
 Lorsque vous parcourez la liste des ordres, le prix du bitcoin-fiat des ordres en direct que vous voyez est automatiquement ajusté pour inclure la prime correspondante de l'ordre. Reportez-vous à [Comprendre > Prime](/docs/fr/premium/) pour plus d'informations sur les primes.
 
-Si une monnaie fiat n'est pas disponible sur RoboSats, vous pouvez facilement ajouter une nouvelle monnaie en ouvrant une pull request sur [GitHub](https://github.com/RoboSats/robosats) !
+Si une monnaie fiat n'est pas disponible sur RoboSats, vous pouvez facilement ajouter une nouvelle monnaie en ouvrant une pull request sur [GitHub](https://github.com/Robosats-Federation/robosats) !
 
 ****La méthode de tarification explicite a été supprimée en tant qu'option pour des raisons techniques, mais pourrait potentiellement revenir dans de futures mises à jour. Actuellement, la tarification des ordres n'est que relative au taux du marché**.
 
@@ -49,7 +49,7 @@ Les frais de plateforme (`fee_sats`) associés à votre ordre sont calculés en 
   fee_sats = trade_sats * fee_fraction
   ````
 
-où `fee_fraction` se combine pour un total partagé de frais de plateforme de {{site.robosats.total_fee}}% ; cela se décompose en {{site.robosats.maker_fee}}% et {{site.robosats.taker_fee}}% pour le maker et le taker, respectivement. Référez-vous à [Comprendre > Frais] (https://learn.robosats.org/docs/fr/fees/) pour plus d'informations sur les frais.
+où `fee_fraction` se combine pour un total partagé de frais de plateforme de {{site.robosats.total_fee}}% ; cela se décompose en {{site.robosats.maker_fee}}% et {{site.robosats.taker_fee}}% pour le maker et le taker, respectivement. Référez-vous à [Comprendre > Frais] (https://learn.robosats.app/docs/fr/fees/) pour plus d'informations sur les frais.
 
 RoboSats collecte ensuite les frais dans le processus de dépôt de garantie (`escrow_amount`) et la facture de paiement (`payout_amount`) en calculant ce qui suit :
 * Pour le vendeur:
@@ -87,11 +87,11 @@ N'hésitez pas à suggérer d'autres fournisseurs d'API ! RoboSats calcule le pr
 
 Toutes les devises disponibles dans les APIs yadio.io et blockchain.info devraient également être disponibles dans RoboSats.
 
-Vous ne voyez pas une monnaie avec laquelle vous voulez faire du commerce ? Il est très facile pour les contributeurs d'ajouter une nouvelle devise en ouvrant une pull request sur [GitHub] (https://github.com/RoboSats/robosats).
+Vous ne voyez pas une monnaie avec laquelle vous voulez faire du commerce ? Il est très facile pour les contributeurs d'ajouter une nouvelle devise en ouvrant une pull request sur [GitHub] (https://github.com/Robosats-Federation/robosats).
 
-Tout d'abord, vérifiez le fichier [currencies.json](https://github.com/RoboSats/robosats/blob/main/frontend/static/assets/currencies.json) actuel pour vérifier si la devise que vous recherchez est effectivement absente de RoboSats.
+Tout d'abord, vérifiez le fichier [currencies.json](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/static/assets/currencies.json) actuel pour vérifier si la devise que vous recherchez est effectivement absente de RoboSats.
 
-Si vous trouvez une devise manquante dans RoboSats et pourtant disponible dans l'une des deux API référencées, vous pouvez alors modifier directement les fichiers currencies.json et [FlagsWithProps.tsx](https://github.com/RoboSats/robosats/blob/main/frontend/src/components/FlagWithProps/FlagWithProps.tsx).
+Si vous trouvez une devise manquante dans RoboSats et pourtant disponible dans l'une des deux API référencées, vous pouvez alors modifier directement les fichiers currencies.json et [FlagsWithProps.tsx](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/src/components/FlagWithProps/FlagWithProps.tsx).
 
 Après avoir fusionné la pull request, la devise ajoutée sera désormais disponible dans RoboSats !
 

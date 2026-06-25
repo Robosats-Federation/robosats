@@ -163,7 +163,7 @@ export const ChatPrompt = ({
           <>
             {'⚠️ '}
             <a
-              href='https://robosats.org/docs/payment-methods/#scams'
+              href='https://robosats.app/docs/payment-methods/#scams'
               target='_blank'
               rel='noreferrer'
             >

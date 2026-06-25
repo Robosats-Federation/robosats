@@ -64,8 +64,8 @@ phrases = OrderedDict(
         ),
         ("This order is not available", "This order is not available"),
         (
-            "The Robotic Satoshis working in the warehouse did not understand you. Please, fill a Bug Issue in Github https://github.com/RoboSats/robosats/issues",
-            "The Robotic Satoshis working in the warehouse did not understand you. Please, fill a Bug Issue in Github https://github.com/RoboSats/robosats/issues",
+            "The Robotic Satoshis working in the warehouse did not understand you. Please, fill a Bug Issue in Github https://github.com/Robosats-Federation/robosats/issues",
+            "The Robotic Satoshis working in the warehouse did not understand you. Please, fill a Bug Issue in Github https://github.com/Robosats-Federation/robosats/issues",
         ),
     ]
 )

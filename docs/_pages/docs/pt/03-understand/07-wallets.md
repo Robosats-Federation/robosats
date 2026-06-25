@@ -23,7 +23,7 @@ thumbsdown: "<i style='color:#9c27b0' class='fa-solid fa-thumbs-down fa-2xl'></i
 unclear: "<i style='color:#ff9800' class='fa-solid fa-question fa-2xl'></i>"
 bitcoin: "<i class='fa-solid fa-bitcoin-sign'></i>"
 ---
-Esta é uma compilação não exaustiva baseada na experiência anterior dos usuários. Não testamos todas as carteiras, se você tentar uma carteira que ainda não está coberta, [informe aqui](https://github.com/Robosats/robosats/issues/44).
+Esta é uma compilação não exaustiva baseada na experiência anterior dos usuários. Não testamos todas as carteiras, se você tentar uma carteira que ainda não está coberta, [informe aqui](https://github.com/Robosats-Federation/robosats/issues/44).
 
 | Carteira | Versão | Dispositivo | UX<sup>1</sup> | Bonds<sup>2</sup> | Pagamentos<sup>3</sup> | Comp<sup>4</sup> | Total<sup>5</sup> |
 |:---|:---|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -39,8 +39,8 @@ Esta é uma compilação não exaustiva baseada na experiência anterior dos usu
 |[Mash](https://app.mash.com/wallet)|[Beta](https://mash.com/consumer-experience/)|{{page.laptop}}{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}} | {{page.thumbsup}}|
 |[Muun](#muun-móvil)|[47.3](https://muun.com/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.bad}}|{{page.bad}}|{{page.thumbsdown}}|
 |[Phoenix](#phoenix-móvil)|[35-1.4.20](https://phoenix.acinq.co/)|{{page.phone}}|{{page.good}}|{{page.soso}}|{{page.soso}}|{{page.soso}}|{{page.unclear}}|
-|[SBW](https://github.com/RoboSats/robosats/issues/44#issue-1135544303)|[2.4.27](https://github.com/btcontract/wallet/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
-|[WoS](https://github.com/RoboSats/robosats/issues/44#issue-1135544303)|[1.15.0](https://www.walletofsatoshi.com/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
+|[SBW](https://github.com/Robosats-Federation/robosats/issues/44#issue-1135544303)|[2.4.27](https://github.com/btcontract/wallet/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
+|[WoS](https://github.com/Robosats-Federation/robosats/issues/44#issue-1135544303)|[1.15.0](https://www.walletofsatoshi.com/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
 |[Zeus](#zeus-móvil-lnd-cln-eclair-remote-backend)|[v0.6.0-rc3](https://github.com/ZeusLN/zeus)|{{page.phone}}{{page.remote}}|{{page.soso}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
 
 1. **UX:** A carteira transmite claramente que existe um pagamento "em andamento" (fatura hodl)?
@@ -108,7 +108,7 @@ A partir da versão 2.5, não suporta Lightning.
 
 
 ## <i class="fa-solid fa-code-pull-request"></i> Ajude a manter esta página atualizada
-Há muitas carteiras e todas continuam melhorando à velocidade da lightning. Você pode contribuir para o projeto de código aberto RoboSats testando as carteiras, editando [o conteúdo desta página](https://github.com/Robosats/robosats/tree/main/docs/{{page.src}}) e abrindo um [Pull Request](https://github.com/Robosats/robosats/pulls)
+Há muitas carteiras e todas continuam melhorando à velocidade da lightning. Você pode contribuir para o projeto de código aberto RoboSats testando as carteiras, editando [o conteúdo desta página](https://github.com/Robosats-Federation/robosats/tree/active-maintenance/docs/{{page.src}}) e abrindo um [Pull Request](https://github.com/Robosats-Federation/robosats/pulls)
 
 
 ## Informações adicionais

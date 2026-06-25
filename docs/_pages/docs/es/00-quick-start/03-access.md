@@ -14,7 +14,7 @@ src: "_pages/docs/es/00-quick-start/03-access.md"
 
 Una forma segura y muy privada de usar RoboSats es a través de la dirección Onion. Necesitas el [navegador TOR](/docs/es/tor/).
 
-> [<b>robosats</b>y56bwqn56qyadmcxkx767hnab<br/>g4mihxlmgyt6if5gnuxvzad.onion](http://robosatsy56bwqn56qyadmcxkx767hnabg4mihxlmgyt6if5gnuxvzad.onion/)
+> [<b>robosats</b>7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion](http://robosats7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion/)
 
 **Privado:** tu conexión será encriptada de extremo a extremo y retransmitida por varias capas de nodos, lo que dificultará el seguimiento.
 {: .notice--primary}
@@ -28,7 +28,7 @@ I2P es otra forma segura y privada de usar RoboSats. Necesitas instalar [I2P](ht
 ## <i class="fa-solid fa-window-maximize"></i> De forma insegura en Clearnet
 Hay una forma insegura de acceder a RoboSats sin TOR que se basa en servicios tor2web de terceros. Con esta URL puedes acceder a RoboSats desde cualquier navegador, pero usar esta URL es **altamente desaconsejado!**
 
-> [unsafe.robosats.org](https://unsafe.robosats.org)
+> [unsafe.robosats.app](https://unsafe.robosats.app)
 
 **Inseguro:** tu privacidad puede verse comprometida si utilizas la url insegura de clearnet en un navegador web normal.
 {: .notice--secondary}
@@ -37,9 +37,9 @@ Si usas la URL de clearnet, debeberías asumir que estás siendo espiado. Sin em
 
 ## <i class="fa-solid fa-person-dots-from-line"></i> Todo en uno
 
-Para simplificar las cosas, se ha creado la URL "robosats.org" para que sirva de enlace fácil de recordar y todo en uno para los navegadores. Si utiliza un navegador TOR o I2P, se le dirigirá al sitio Onion o I2P, respectivamente. De lo contrario, se le dirigirá al sitio no seguro de Clearnet.
+Para simplificar las cosas, se ha creado la URL "robosats.app" para que sirva de enlace fácil de recordar y todo en uno para los navegadores. Si utiliza un navegador TOR o I2P, se le dirigirá al sitio Onion o I2P, respectivamente. De lo contrario, se le dirigirá al sitio no seguro de Clearnet.
 
-> [<span style="font-size:larger;">robosats.org</span>](https://robosats.org)
+> [<span style="font-size:larger;">robosats.app</span>](https://robosats.app)
 
 
 ## Otros
@@ -51,7 +51,7 @@ Puedes practicar y probar todas las funcionalidades de RoboSats sin perder fondo
 ### Clearnet Mirrors
 Hay varios servicios tor2web que sirven como mirrors en caso de que uno de ellos no esté disponible
 
-> [unsafe.robosats.org](https://unsafe.robosats.org/) <br/>
+> [unsafe.robosats.app](https://unsafe.robosats.app/) <br/>
 
 
 {% include improve_es %}

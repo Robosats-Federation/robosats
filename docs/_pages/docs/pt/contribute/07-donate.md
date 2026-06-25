@@ -21,7 +21,7 @@ Você pode doar das seguintes maneiras:
   <script src="https://embed.twentyuno.net/js/app.js"></script>
 </div>
 
-**Doar diretamente ao desenvolvedor que está trabalhando nas funcionalidades que você gosta**. Verifique os [PRs ativos](https://github.com/RoboSats/robosats/pulls) e mostre seu apoio aos desenvolvedores com gorjetas via Lightning. Basta escrever uma mensagem, por exemplo "@developer_name, gostaria de financiar o desenvolvimento dessa funcionalidade com 6000 Sats". O desenvolvedor deve responder com uma fatura LN com um longo tempo de expiração.
+**Doar diretamente ao desenvolvedor que está trabalhando nas funcionalidades que você gosta**. Verifique os [PRs ativos](https://github.com/Robosats-Federation/robosats/pulls) e mostre seu apoio aos desenvolvedores com gorjetas via Lightning. Basta escrever uma mensagem, por exemplo "@developer_name, gostaria de financiar o desenvolvimento dessa funcionalidade com 6000 Sats". O desenvolvedor deve responder com uma fatura LN com um longo tempo de expiração.
 
 - **Doar para RoboSats devfund via Paynym (BIP47): [{{site.robosats.paynym}}](https://paynym.is/{{site.robosats.paynym}})** paynym code:
 

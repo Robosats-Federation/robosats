@@ -46,7 +46,7 @@ An `Order` contains the details obtained from the coordinator hosting it and all
 
 A `Coordinator` serves as one of the decentralized backends within the federation, but incorporating all the essential logic to operate in complete isolation. This architecture ensures that there is no interdependence among federation members; however, they utilize an internal Nostr mesh to facilitate the reachability of information to any client.
 
-You can check the entire architecture here https://github.com/RoboSats/robosats-deploy
+You can check the entire architecture here https://github.com/Robosats-Federation/robosats-deploy
 
 <div align="center">
   <img src="./assets/backend.png" width="600px">

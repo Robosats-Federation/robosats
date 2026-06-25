@@ -26,8 +26,8 @@ description: >-
 
   - Guides and video tutorials available at https://learn.robosats.com/watch/en
 
-  You can join other cool Robots and get community support at https://learn.robosats.org.
-repository: https://github.com/RoboSats/robosats
+  You can join other cool Robots and get community support at https://learn.robosats.app.
+repository: https://github.com/Robosats-Federation/robosats
 images:
   - ../fastlane/metadata/en-US/images/phoneScreenshots/01.png
   - ../fastlane/metadata/en-US/images/phoneScreenshots/02.png

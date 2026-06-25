@@ -16,7 +16,7 @@ Al hacer una orden, hay dos métodos diferentes de fijación de precios disponib
 
 Cuando navegue por el libro de órdenes, el precio bitcoin-fiat de las órdenes en vivo que vea se ajustará automáticamente para incluir la prima correspondiente a la orden. Consulte [Entender > Prima](/docs/es/premium/) para obtener información adicional sobre las primas.
 
-¡Si una moneda fiduciaria no está disponible en RoboSats, entonces se puede añadir fácilmente una nueva moneda mediante la apertura de una solicitud de extracción en [GitHub](https://github.com/RoboSats/robosats)!
+¡Si una moneda fiduciaria no está disponible en RoboSats, entonces se puede añadir fácilmente una nueva moneda mediante la apertura de una solicitud de extracción en [GitHub](https://github.com/Robosats-Federation/robosats)!
 
 ***El método de precios explícitos se ha eliminado como opción por razones técnicas, pero podría volver en futuras actualizaciones. Actualmente, el precio de las órdenes sólo es relativo a la tarifa de mercado.
 
@@ -47,7 +47,7 @@ Las comisiones de la plataforma (`fee_sats`) asociadas a tu orden se calculan us
   fee_sats = trade_sats * fee_fraction
   ````
 
-donde `fracción_de_tarifa` se combina para una tarifa total compartida de la plataforma de {{site.robosats.total_fee}}%; que se desglosa en {{site.robosats.maker_fee}}% y {{site.robosats.taker_fee}}% para maker y taker, respectivamente. Consulte [Entender > Tarifas](https://learn.robosats.org/docs/fees/) para obtener información adicional sobre las tarifas.
+donde `fracción_de_tarifa` se combina para una tarifa total compartida de la plataforma de {{site.robosats.total_fee}}%; que se desglosa en {{site.robosats.maker_fee}}% y {{site.robosats.taker_fee}}% para maker y taker, respectivamente. Consulte [Entender > Tarifas](https://learn.robosats.app/docs/fees/) para obtener información adicional sobre las tarifas.
 
 RoboSats cobra las tarifas en el proceso de depósito en garantía (`escrow_amount`) y la factura de pago (`payout_amount`) calculando lo siguiente:
 * Para el vendedor:
@@ -85,11 +85,11 @@ No dude en sugerir otros proveedores de API. RoboSats calcula el precio medio bi
 
 Todas las monedas disponibles en yadio.io y blockchain.info APIs deben estar disponibles en RoboSats también.
 
-¿No ves una divisa con la que quieras operar? Es muy fácil para los colaboradores añadir una nueva moneda mediante la apertura de una solicitud de extracción en el [GitHub](https://github.com/RoboSats/robosats).
+¿No ves una divisa con la que quieras operar? Es muy fácil para los colaboradores añadir una nueva moneda mediante la apertura de una solicitud de extracción en el [GitHub](https://github.com/Robosats-Federation/robosats).
 
-En primer lugar, compruebe el archivo actual [currencies.json](https://github.com/RoboSats/robosats/blob/main/frontend/static/assets/currencies.json) para verificar si la moneda que usted está buscando es, en efecto, falta en RoboSats.
+En primer lugar, compruebe el archivo actual [currencies.json](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/static/assets/currencies.json) para verificar si la moneda que usted está buscando es, en efecto, falta en RoboSats.
 
-Si encuentras una moneda que falta en RoboSats y también está disponible en cualquiera de las dos APIs referenciadas, entonces puedes editar directamente los archivos currencies.json y [FlagsWithProps.tsx](https://github.com/RoboSats/robosats/blob/main/frontend/src/components/FlagWithProps/FlagWithProps.tsx).
+Si encuentras una moneda que falta en RoboSats y también está disponible en cualquiera de las dos APIs referenciadas, entonces puedes editar directamente los archivos currencies.json y [FlagsWithProps.tsx](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/src/components/FlagWithProps/FlagWithProps.tsx).
 
 Después de fusionar el pull request, la moneda añadida estará disponible en RoboSats.
 
