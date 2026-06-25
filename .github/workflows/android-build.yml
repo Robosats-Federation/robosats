@@ -16,10 +16,10 @@ on:
       KEY_STORE_PASS:
         required: true
   push:
-    branches: [ "main" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: [ "android", "frontend" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: [ "android", "frontend" ]
 
 jobs:
