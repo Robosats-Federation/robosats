@@ -18,7 +18,7 @@ Check our tutorials and many more at https://learn.robosats.app
 
 ## Try it out!
 - **MAIN TOR URL:** [**RoboSats**7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion](http://robosats7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion) ( Open with [Tor Browser](https://www.torproject.org/download/))
-- Coordinators TOR URLs: [Clients hosted by coordinators](https://github.com/Robosats-Federation/robosats/discussions/2216 )
+- Coordinators TOR URLs: [Clients hosted by coordinators](https://github.com/Robosats/robosats/discussions/2216 )
 - Clearnet URL: [unsafe.robosats.app](https://unsafe.robosats.app) (not recommended!)
 
 *Always use [Tor Browser](https://www.torproject.org/download/) and .onion for best privacy. The Clearnet URL redirects to a third party Tor2web service. Your privacy cannot be guaranteed to be respected. Use clearnet only to check around the app, never use for trading!*
