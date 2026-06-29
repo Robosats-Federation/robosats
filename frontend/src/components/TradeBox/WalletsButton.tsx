@@ -11,7 +11,7 @@ const WalletsButton = (): React.JSX.Element => {
     <Button
       color='primary'
       component={Link}
-      href={'https://learn.robosats.org/docs/wallets/'}
+      href={'https://learn.robosats.app/docs/wallets/'}
       target='_blank'
       align='center'
     >

@@ -54,7 +54,7 @@ ERRORS = {
     1047: "You are not a participant in this order",
     1048: "The PGP signed cleartext message is not valid.",
     1049: "The Robotic Satoshis working in the warehouse did not understand you. "
-    + "Please, fill a Bug Issue in Github https://github.com/RoboSats/robosats/issues",
+    + "Please, fill a Bug Issue in Github https://github.com/Robosats-Federation/robosats/issues",
     1050: "Invalid date format",
     1051: "More than 5000 market ticks have been found. Please, narrow the date range",
     1052: "Robot has no finished order",

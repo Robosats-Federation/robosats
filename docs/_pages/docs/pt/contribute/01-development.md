@@ -10,7 +10,7 @@ toc_sticky: true
 src: "_pages/pt/contribute/01-development.md"
 ---
 
-Qualquer pessoa pode contribuir para o desenvolvimento do projeto de código aberto RoboSats. Se você está procurando por um lugar para começar a contribuir, então confira a lista de problemas compartilhado ["good first issue"](https://github.com/RoboSats/robosats/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue"); tais problemas são bons para iniciantes.
+Qualquer pessoa pode contribuir para o desenvolvimento do projeto de código aberto RoboSats. Se você está procurando por um lugar para começar a contribuir, então confira a lista de problemas compartilhado ["good first issue"](https://github.com/Robosats-Federation/robosats/issues?q=is%3Aopen+is%3Aissue+label%3A"good+first+issue"); tais problemas são bons para iniciantes.
 
 Este guia de contribuição é baseado no [guia de contribuição do Bisq](https://github.com/bisq-network/bisq/blob/master/CONTRIBUTING.md). Seguir as melhores práticas de software livre e de código aberto ajuda o desenvolvimento a permanecer organizado à medida que o projeto cresce com novos recursos e é continuamente otimizado. Futuros colaboradores irão agradecer por seguir essas melhores práticas e facilitar a construção sobre seu trabalho!
 

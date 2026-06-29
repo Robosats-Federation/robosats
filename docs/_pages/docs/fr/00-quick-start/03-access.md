@@ -14,7 +14,7 @@ src: "_pages/docs/fr/00-quick-start/03-access.md"
 
 Un moyen sûr et très privé d'accéder à RoboSats est de passer par l'adresse Onion. Vous avez besoin d'un [navigateur TOR](/docs/fr/tor/) et d'un accès via le lien :
 
-> [<b>robosats</b>y56bwqn56qyadmcxkx767hnab<br/>g4mihxlmgyt6if5gnuxvzad.onion](http://robosatsy56bwqn56qyadmcxkx767hnabg4mihxlmgyt6if5gnuxvzad.onion/)
+> [<b>robosats</b>7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion](http://robosats7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion/)
 
 **Privé :** Votre connexion est chiffrée de bout-en-bout et relayée par plusieurs couches de nœuds, ce qui rend le suivi plus difficile.
 {: .notice--primary}
@@ -23,7 +23,7 @@ Un moyen sûr et très privé d'accéder à RoboSats est de passer par l'adresse
 
 RoboSats est accessible en toute sécurité et en privé via l'application Android. L'application est disponible sur la page GitHub de RoboSats :
 
-> [Download the <b>latest release</b> of the universal RoboSats APK for Android](https://github.com/RoboSats/robosats/releases)
+> [Download the <b>latest release</b> of the universal RoboSats APK for Android](https://github.com/Robosats-Federation/robosats/releases)
 
 ## <img style='width:36px;height:38px;-webkit-filter:grayscale(1);filter:grayscale(1);' src='/assets/vector/Itoopie.svg'/> En privé avec I2P
  est un autre moyen sûr et privé d'accéder à RoboSats. Vous avez besoin d'un [navigateur I2P](https://geti2p.com/en/download) et d'un accès via le lien :
@@ -34,7 +34,7 @@ RoboSats est accessible en toute sécurité et en privé via l'application Andro
 
 Il existe un moyen peu sûr de consulter la liste des transactions de RoboSats sans TOR, qui repose sur des services tor2web tiers. Avec cette URL, vous pouvez accéder à RoboSats à partir de n'importe quel navigateur, mais l'utilisation de cette URL est **fortement déconseillée !**.
 
-> [unsafe.robosats.org](https://unsafe.robosats.org)
+> [unsafe.robosats.app](https://unsafe.robosats.app)
 
 **Dangereux** Votre vie privée peut être compromise si vous utilisez l'URL non sécurisée du Clearnet dans un navigateur web normal.
 {: .notice--secondary}
@@ -43,9 +43,9 @@ Si vous utilisez l'URL clearnet, vous devez supposer que vous êtes espionné. C
 
 ## <i class="fa-solid fa-person-dots-from-line"></i> URL Tout-en-un
 
-Pour simplifier les choses, l'URL "robosats.org" a été créée pour servir de lien facile à retenir et tout-en-un pour les navigateurs. Si vous utilisez le navigateur TOR ou I2P, vous serez dirigé vers le site Onion ou I2P, respectivement. Dans le cas contraire, vous êtes dirigé vers le site Clearnet, qui n'est pas sûr.
+Pour simplifier les choses, l'URL "robosats.app" a été créée pour servir de lien facile à retenir et tout-en-un pour les navigateurs. Si vous utilisez le navigateur TOR ou I2P, vous serez dirigé vers le site Onion ou I2P, respectivement. Dans le cas contraire, vous êtes dirigé vers le site Clearnet, qui n'est pas sûr.
 
-> [<span style="font-size:larger;">robosats.org</span>](https://robosats.org)
+> [<span style="font-size:larger;">robosats.app</span>](https://robosats.app)
 
 ## Autres
 
@@ -57,6 +57,6 @@ Vous pouvez vous entraîner et tester toutes les fonctionnalités de RoboSats sa
 
 Il existe plusieurs services tor2web qui servent de miroirs en cas d'indisponibilité de l'un d'entre eux :
 
-> [unsafe.robosats.org](https://unsafe.robosats.org/) <br/>
+> [unsafe.robosats.app](https://unsafe.robosats.app/) <br/>
 
 {% include improve_fr %}

@@ -404,7 +404,7 @@ class BookViewSchema:
                 location=OpenApiParameter.QUERY,
                 description=(
                     "The currency id to filter by. Currency IDs can be found [here]"
-                    "(https://github.com/RoboSats/robosats/blob/main/frontend/static/assets/currencies.json). "
+                    "(https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/static/assets/currencies.json). "
                     "Value of `0` means ANY currency"
                 ),
                 type=int,
@@ -450,7 +450,7 @@ class RobotViewSchema:
             Make sure you generate your token using cryptographically secure methods.
             Since the server only receives the hash of the
             token, it is responsibility of the client to create a strong token. Check
-            [here](https://github.com/RoboSats/robosats/blob/main/frontend/src/utils/token.ts)
+            [here](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/src/utils/token.ts)
             to see how the Javascript client creates a random strong token and how it validates entropy is optimal for tokens
             created by the user at will.
             The PGP key should be an EdDSA ed25519/cert,sign+cv25519/encr key.

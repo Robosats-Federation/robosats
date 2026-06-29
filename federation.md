@@ -49,14 +49,14 @@ Short list of what a coordinator is expected to do:
 - Voluntarily stream Sats to the RoboSats devFund to make RoboSats even more awesome.
 
 ### How to become part of the Federation and be included in the RoboSats app?
-Simply open a new issue in GitHub and select the form "Coordinator Registration". You can **preview the [Coordinator Registration form here](https://github.com/RoboSats/robosats/blob/main/.github/ISSUE_TEMPLATE/coordinator_registration.yaml)** .
+Simply open a new issue in GitHub and select the form "Coordinator Registration". You can **preview the [Coordinator Registration form here](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/.github/ISSUE_TEMPLATE/coordinator_registration.yaml)** .
 
 Coordinator registrations are **always OPEN** . All fields can be updated or completed later through pull requests. Don't worry about getting everything perfect initially. It's okay if your data policy, privacy policy, node ids, and endpoints aren't fully defined or are subject to change.
 
 ### How to run a RoboSats Coordinator?
 The easiest way to run a RoboSats coordinator is by using our Docker image releases (see Github Release). That's it, there are no more guides at the moment so it requires a fair bit of technical knowledge as of now. The details of how to wire everything will vary depending on your existing infrastructure. You will find help on our [SimpleX Development Group](https://simplex.chat/contact#/?v=2-7&smp=smp%3A%2F%2F6iIcWT_dF2zN_w5xzZEY7HI2Prbh3ldP07YTyDexPjE%3D%40smp10.simplex.im%2FKEkNLMlgM8vrrU3xjBt5emS7EsP0c4s1%23%2F%3Fv%3D1-3%26dh%3DMCowBQYDK2VuAyEABehx7Tgefl_vvOGOe2SThJCGACKRgSU2wiUdIJ5bQHw%253D%26srv%3Drb2pbttocvnbrngnwziclp2f4ckjq65kebafws6g4hy22cdaiv5dwjqd.onion&data=%7B%22type%22%3A%22group%22%2C%22groupLinkId%22%3A%22gFi-9hvL3XgXXTgnlZPyJw%3D%3D%22%7D).
 
-We are working to release three flavors of pre-configured orchestrations with decent defaults: 1) a well-tested docker-compose orchestration and 2) a [StartOS](https://github.com/Start9Labs/start-os) RoboSats Coordinator App, and lastly 3) an elegant, but little tested, Kubernetes orchestration. The infrastructure-as-code will be open source as well. You can find the repository holding the docker-compose and kubernetes orchestrations here [RoboSats-Deploy](https://github.com/RoboSats/robosats-deploy). The Kubernetes orchestration as wel as the StartOS app are still work in progress.
+We are working to release three flavors of pre-configured orchestrations with decent defaults: 1) a well-tested docker-compose orchestration and 2) a [StartOS](https://github.com/Start9Labs/start-os) RoboSats Coordinator App, and lastly 3) an elegant, but little tested, Kubernetes orchestration. The infrastructure-as-code will be open source as well. You can find the repository holding the docker-compose and kubernetes orchestrations here [RoboSats-Deploy](https://github.com/Robosats-Federation/robosats-deploy). The Kubernetes orchestration as wel as the StartOS app are still work in progress.
 
 ### Can a RoboSats coordinator be profitable?
 There are many nuances, but the short answer is: Yes.
@@ -72,11 +72,11 @@ As discussed above, a lightning node capable of coordinating hundreds of RoboSat
 
 Donations to the Development Fund (DevFund) are voluntary with no minimum amount. The default donation rate in the Coordinator backend is 20%, however, you can freely set this value to 0%. Regardless of the amount a coordinator donates for development, all coordinators will be included in the client app.
 
-The coordinators that chose to stick with the default donation rate or higher will get to display a cool badge on their profiles. The RoboSats client app randomly sorts coordinators weighted by their DevFund donation value ([implementation here](https://github.com/RoboSats/robosats/blob/2262dc2af7110e86bb529f5075a19a50e16ade45/frontend/src/utils/federationLottery.ts#L27-L30)). Thus, the orders of the coordinators that contribute to the development have a higher chance to appear first in the Order book. Coordinators who contribute to the DevFund are also more likely to receive support if needed (note that unless the devs are under time constraints support is unlikely to be denied). These patron perks are the way developers say "thank you for your contribution!".
+The coordinators that chose to stick with the default donation rate or higher will get to display a cool badge on their profiles. The RoboSats client app randomly sorts coordinators weighted by their DevFund donation value ([implementation here](https://github.com/Robosats-Federation/robosats/blob/2262dc2af7110e86bb529f5075a19a50e16ade45/frontend/src/utils/federationLottery.ts#L27-L30)). Thus, the orders of the coordinators that contribute to the development have a higher chance to appear first in the Order book. Coordinators who contribute to the DevFund are also more likely to receive support if needed (note that unless the devs are under time constraints support is unlikely to be denied). These patron perks are the way developers say "thank you for your contribution!".
 
 The RoboSats development team has an exciting roadmap ahead. However, once RoboSats is fully decentralized, the only source of funding for further development and maintaining the codebase will be donations (we do not accept venture-capital investments). Some of the exciting roadmap ahead:
-- [RoboSats PRO app](https://github.com/RoboSats/robosats/issues/177) (Intended for professional market makers. This client can manage many orders/robots in many coordinators at once.)
-- [Onchain private Taproot/MAST contracts](https://github.com/RoboSats/robosats/issues/230)
+- [RoboSats PRO app](https://github.com/Robosats-Federation/robosats/issues/177) (Intended for professional market makers. This client can manage many orders/robots in many coordinators at once.)
+- [Onchain private Taproot/MAST contracts](https://github.com/Robosats-Federation/robosats/issues/230)
 - Fully functional Android torified App. Eventually, iOS app as well (we'll try :D)
 - Keep up to date with Lightning development, overall polishing of UX and improve tooling for coordinators.
 
@@ -131,5 +131,5 @@ The Robosats suite is configured to offer maximum privacy from the inside, but t
 3. Install and configure `privoxy` for commands that are not compatible with SOCKS.
 4. Docker builds its own network and can often bypass Tor and the VPN's kill switch, including pulling from docker.io and any requests made inside containers. Make sure to define and test proxy settings for Docker (test it with `docker run --rm curlimages/curl https://check.torproject.org`).
 5. Possibly the best option to obtain the Robosats Docker image is to avoid using docker.io and instead build the releases locally.
-6. If you want to avoid GitHub, we have mirrored repositories available at [http://git.robosats.org](http://git.robosats.org).
+6. If you want to avoid GitHub, we have mirrored repositories available at [http://git.robosats.app](http://git.robosats.app).
 

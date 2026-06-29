@@ -16,7 +16,7 @@ sidebar:
 ### <a href="https://www.athena-alpha.com/how-to-buy-bitcoins-using-robosats/" target="_blank">Comment acheter des Bitcoins en utilisant des RoboSats : Les sats sans KYC les plus rapides de l'Occident</a>
 Le guide complet d'Athena Alpha vous guide pas à pas à travers le processus d'achat. Il répond également à toutes les questions que vous pourriez vous poser et explique comment les débutants en bitcoins peuvent obtenir le dépôt nécessaire pour effectuer leur première transaction.
 
-![sharerobosats1](https://github.com/RoboSats/robosats/assets/64638670/0f73e57d-a7c4-454f-a5df-1e038e039af3)
+![sharerobosats1](https://github.com/Robosats-Federation/robosats/assets/64638670/0f73e57d-a7c4-454f-a5df-1e038e039af3)
 ### <a href="https://bitcoiner.guide/robosats/" target="_blank">Apprendre à utiliser le système d'échange P2P de RoboSats</a>
 Le guide de QnA explique l'importance du Bitcoin non-KYC, décompose le jargon de RoboSats, donne une explication complète des fonctionnalités et un guide étape par étape pour réaliser votre première transaction avec RoboSats.
 
@@ -121,7 +121,7 @@ La première chose à faire est de bloquer une petite obligation de fidélité (
 <img src="/assets/images/how-to-use/contract-box-1.png"  width="370" />
 </div>
 
-Scannez ou copiez la facture dans votre portefeuille éclair. Il se peut qu'elle apparaisse comme un paiement en transit, qu'elle gèle ou même qu'elle casse apparemment votre porte-monnaie. Vous devez toujours vérifier sur le site web de RoboSats si l'obligation a été bloquée (votre portefeuille ne vous le dira probablement pas ! Consultez la [liste de compatibilité des portefeuilles](https://github.com/RoboSats/robosats/issues/44)).
+Scannez ou copiez la facture dans votre portefeuille éclair. Il se peut qu'elle apparaisse comme un paiement en transit, qu'elle gèle ou même qu'elle casse apparemment votre porte-monnaie. Vous devez toujours vérifier sur le site web de RoboSats si l'obligation a été bloquée (votre portefeuille ne vous le dira probablement pas ! Consultez la [liste de compatibilité des portefeuilles](https://github.com/Robosats-Federation/robosats/issues/44)).
 
 <div align="center">
 <img src="/assets/images/how-to-use/contract-box-2.png"  width="370" />
@@ -179,13 +179,13 @@ Sur la page du créateur, vous ne devez saisir que la devise, le type d'ordre (a
 <img src="/assets/images/how-to-use/contract-box-7.png"  width="370" />
 </div>
 
-Vous devez copier ou scanner la facture avec votre portefeuille lightning afin de verrouiller votre dépôt de garantie (seulement 1% du montant de la transaction)). En verrouillant cette obligation, les preneurs savent qu'ils peuvent vous faire confiance et qu'ils s'engagent à poursuivre la transaction. Dans votre portefeuille, cela peut apparaître comme un paiement en transit, geler ou même apparemment casser votre portefeuille. Vous devez toujours vérifier sur le site web de RoboSats si le lien a été verrouillé (votre portefeuille ne vous le dira probablement pas !). Consultez la [liste de compatibilité des portefeuilles](https://github.com/RoboSats/robosats/issues/44)).
+Vous devez copier ou scanner la facture avec votre portefeuille lightning afin de verrouiller votre dépôt de garantie (seulement 1% du montant de la transaction)). En verrouillant cette obligation, les preneurs savent qu'ils peuvent vous faire confiance et qu'ils s'engagent à poursuivre la transaction. Dans votre portefeuille, cela peut apparaître comme un paiement en transit, geler ou même apparemment casser votre portefeuille. Vous devez toujours vérifier sur le site web de RoboSats si le lien a été verrouillé (votre portefeuille ne vous le dira probablement pas !). Consultez la [liste de compatibilité des portefeuilles](https://github.com/Robosats-Federation/robosats/issues/44)).
 
 <div align="center">
 <img src="/assets/images/how-to-use/contract-box-8.png"  width="370" />
 </div>
 
-Votre commande sera publique pendant {{site.robosats.hours_public_default}} heures. Vous pouvez vérifier le temps restant avant l'expiration en consultant l'onglet "Commande". Elle peut être annulée à tout moment sans pénalité avant qu'elle ne soit prise par un autre robot. Gardez l'onglet du contrat ouvert pour être notifié [avec ce son](https://github.com/RoboSats/robosats/raw/main/frontend/static/assets/sounds/taker-found.mp3). Il est préférable d'effectuer cette opération sur un ordinateur de bureau et d'augmenter le volume, afin de ne pas manquer le moment où votre ordre est pris. Cela peut prendre du temps ! Vous risquez même d'oublier ! Vous pouvez également activer les notifications Telegram en cliquant sur "Enable Telegram Notification" et en appuyant ensuite sur "Start" dans le chat. Vous recevrez un message de bienvenue confirmant l'activation des notifications. Un autre message sera envoyé lorsqu'un preneur pour votre commande sera trouvé.
+Votre commande sera publique pendant {{site.robosats.hours_public_default}} heures. Vous pouvez vérifier le temps restant avant l'expiration en consultant l'onglet "Commande". Elle peut être annulée à tout moment sans pénalité avant qu'elle ne soit prise par un autre robot. Gardez l'onglet du contrat ouvert pour être notifié [avec ce son](https://github.com/Robosats-Federation/robosats/raw/main/frontend/static/assets/sounds/taker-found.mp3). Il est préférable d'effectuer cette opération sur un ordinateur de bureau et d'augmenter le volume, afin de ne pas manquer le moment où votre ordre est pris. Cela peut prendre du temps ! Vous risquez même d'oublier ! Vous pouvez également activer les notifications Telegram en cliquant sur "Enable Telegram Notification" et en appuyant ensuite sur "Start" dans le chat. Vous recevrez un message de bienvenue confirmant l'activation des notifications. Un autre message sera envoyé lorsqu'un preneur pour votre commande sera trouvé.
 
 *Remarque : si vous oubliez votre ordre et qu'un robot le prend et bloque son dépôt de garantie, vous risquez de perdre votre propre caution en ne remplissant pas les étapes suivantes du contrat.*
 

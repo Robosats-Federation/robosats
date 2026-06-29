@@ -16,7 +16,7 @@ Não há muito texto no RoboSats; no entanto, pode ser melhor dividir o trabalho
 
 ## Como contribuir com uma nova tradução
 
-Basta criar um novo arquivo de tradução em `frontend/static/locales` [link para o GitHub](https://github.com/RoboSats/robosats/tree/main/frontend/static/locales). Em `locales`, há um único arquivo com um dicionário JSON para cada idioma. Para criar uma nova tradução, basta copiar `en.json` (o texto principal) para um novo arquivo com o nome do [código de duas letras do idioma ISO 639](https://www.loc.gov/standards/iso639-2/php/English_list.php).
+Basta criar um novo arquivo de tradução em `frontend/static/locales` [link para o GitHub](https://github.com/Robosats-Federation/robosats/tree/active-maintenance/frontend/static/locales). Em `locales`, há um único arquivo com um dicionário JSON para cada idioma. Para criar uma nova tradução, basta copiar `en.json` (o texto principal) para um novo arquivo com o nome do [código de duas letras do idioma ISO 639](https://www.loc.gov/standards/iso639-2/php/English_list.php).
 
 ## Diretrizes
 

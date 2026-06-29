@@ -23,7 +23,7 @@ thumbsdown: "<i style='color:#9c27b0' class='fa-solid fa-thumbs-down fa-2xl'></i
 unclear: "<i style='color:#ff9800' class='fa-solid fa-question fa-2xl'></i>"
 bitcoin: "<i class='fa-solid fa-bitcoin-sign'></i>"
 ---
-Il s'agit d'une compilation non exhaustive basée sur l'expérience des utilisateurs. Nous n'avons pas testé tous les portefeuilles, si vous testez un portefeuille qui n'est pas encore couvert, veuillez le [signaler ici](https://github.com/RoboSats/robosats/issues/44).
+Il s'agit d'une compilation non exhaustive basée sur l'expérience des utilisateurs. Nous n'avons pas testé tous les portefeuilles, si vous testez un portefeuille qui n'est pas encore couvert, veuillez le [signaler ici](https://github.com/Robosats-Federation/robosats/issues/44).
 
 | Wallet | Version | Device | UX<sup>1</sup> | Bonds<sup>2</sup> | Payout<sup>3</sup> | Comp<sup>4</sup> | Total<sup>5</sup> |
 |:---|:---|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -35,12 +35,12 @@ Il s'agit d'une compilation non exhaustive basée sur l'expérience des utilisat
 |[Core Lightning](#core-lightning--cln-cli-interface)|[v0.11.1](https://github.com/ElementsProject/lightning)|{{page.cli}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
 |[Electrum](#electrum-desktop)|[4.1.4](https://github.com/spesmilo/electrum)|{{page.laptop}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}||
 |[LND](#lnd-cli-interface)|[v0.14.2](https://github.com/LightningNetwork/lnd)|{{page.cli}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
-|[lntxbot](https://github.com/RoboSats/robosats/issues/44#issuecomment-1054607956)|[NA](https://t.me/lntxbot)|{{page.laptop}}{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}} | [{{page.thumbsup}}](https://github.com/RoboSats/robosats/issues/44#issuecomment-1054607956)|
+|[lntxbot](https://github.com/Robosats-Federation/robosats/issues/44#issuecomment-1054607956)|[NA](https://t.me/lntxbot)|{{page.laptop}}{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}} | [{{page.thumbsup}}](https://github.com/Robosats-Federation/robosats/issues/44#issuecomment-1054607956)|
 |[Mash](https://app.mash.com/wallet)|[Beta](https://mash.com/consumer-experience/)|{{page.laptop}}{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}} | {{page.thumbsup}}|
 |[Muun](#muun-mobile)|[47.3](https://muun.com/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.bad}}|{{page.bad}}|{{page.thumbsdown}}|
 |[Phoenix](#phoenix-mobile)|[35-1.4.20](https://phoenix.acinq.co/)|{{page.phone}}|{{page.good}}|{{page.soso}}|{{page.good}}|{{page.good}}|{{page.unclear}}|
-|[SBW](https://github.com/RoboSats/robosats/issues/44#issue-1135544303)|[2.4.27](https://github.com/btcontract/wallet/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
-|[WoS](https://github.com/RoboSats/robosats/issues/44#issue-1135544303)|[1.15.0](https://www.walletofsatoshi.com/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
+|[SBW](https://github.com/Robosats-Federation/robosats/issues/44#issue-1135544303)|[2.4.27](https://github.com/btcontract/wallet/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
+|[WoS](https://github.com/Robosats-Federation/robosats/issues/44#issue-1135544303)|[1.15.0](https://www.walletofsatoshi.com/)|{{page.phone}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
 |[Zeus](#zeus-mobile-lnd-cln-eclair-remote-backend)|[v0.6.0-rc3](https://github.com/ZeusLN/zeus)|{{page.phone}}{{page.remote}}|{{page.soso}}|{{page.good}}|{{page.good}}|{{page.good}}|{{page.thumbsup}}|
 
 1. **UX:** Le portefeuille indique-t-il clairement qu'il s'agit d'un paiement "en cours" (hodl invoice) ?
@@ -93,7 +93,7 @@ Phoenix fonctionne très bien en tant que preneur d'ordres. Phoenix fonctionne �
 Il s'agit d'une interface pour LND, CLN et Eclair. Il fonctionne comme prévu. Il est extrêmement trompeur avec un écran rouge complet "TIME OUT" quelques secondes après l'envoi du HTLC. Pourtant, si l'utilisateur vérifie sur le site web, la facture est correctement verrouillée.
 
 ## <i class="fa-solid fa-code-pull-request"></i> Aidez à maintenir cette page à jour
-Il existe de nombreux portefeuilles et tous s'améliorent à la vitesse de l'éclair. Vous pouvez contribuer au projet RoboSats Open Source en testant des portefeuilles, en éditant [le contenu de cette page](https://github.com/RoboSats/robosats/tree/main/docs/fr/{{page.src}}) et en ouvrant une [Pull Request](https://github.com/RoboSats/robosats/pulls).
+Il existe de nombreux portefeuilles et tous s'améliorent à la vitesse de l'éclair. Vous pouvez contribuer au projet RoboSats Open Source en testant des portefeuilles, en éditant [le contenu de cette page](https://github.com/Robosats-Federation/robosats/tree/active-maintenance/docs/fr/{{page.src}}) et en ouvrant une [Pull Request](https://github.com/Robosats-Federation/robosats/pulls).
 
 ## Informations complémentaires
 

@@ -10,7 +10,7 @@ toc_sticky: true
 src: "_pages/es/contribute/01-development.md"
 ---
 
-Todo el mundo puede contribuir al desarrollo del proyecto de código abierto RoboSats. Si estás buscando un lugar donde empezar a contribuir, entonces echa un vistazo a la lista de temas que comparten la etiqueta ["good first issue"](https://github.com/RoboSats/robosats/issues?q=is%3Aopen+is%3Aissue+label%3A "good+first+issue"); estos temas son buenos para los recién llegados.
+Todo el mundo puede contribuir al desarrollo del proyecto de código abierto RoboSats. Si estás buscando un lugar donde empezar a contribuir, entonces echa un vistazo a la lista de temas que comparten la etiqueta ["good first issue"](https://github.com/Robosats-Federation/robosats/issues?q=is%3Aopen+is%3Aissue+label%3A "good+first+issue"); estos temas son buenos para los recién llegados.
 
 Esta guía de contribución se basa en la [Guía de contribución de Bisq](https://github.com/bisq-network/bisq/blob/master/CONTRIBUTING.md). Seguir las mejores prácticas del software libre ayuda a que el desarrollo se mantenga organizado a medida que el proyecto crece con nuevas características y se optimiza continuamente. Los futuros colaboradores te agradecerán que sigas estas buenas prácticas y que tu trabajo sea más fácil de desarrollar.
 
@@ -95,5 +95,5 @@ La configuración [.editorconfig](.editorconfig) de este repositorio asegura una
 Es muy importante mantener el historial git claro, ligero y fácilmente navegable. Esto significa que los contribuidores deben asegurarse de que sus pull requests incluyen sólo commits significativos (si son redundantes o fueron añadidas después de una revisión, deben ser eliminadas) y _no merge commits_.
 
 ### Mirros
-- https://git.robosats.org/Robosats
+- https://git.robosats.app/Robosats
 - https://codeberg.org/Robosats

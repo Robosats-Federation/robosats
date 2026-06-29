@@ -12,7 +12,7 @@ src: "_pages/docs/es/00-quick-start/01-lightning.md"
 
 La Red Lightning, o simplemente LN, es una red de micropagos fuera de la cadena (capa dos) que ofrece bajos costos y pagos instantáneos. RoboSats aprovecha las ventajas de realizar transacciones fuera de la cadena para brindar a los usuarios una experiencia rápida y económica. ¡Hay muchos recursos excelentes disponibles para aprender más sobre cómo funciona la Red Lightning! Consulta ["Mastering the Lightning Network"](https://github.com/lnbook/lnbook) como uno de esos recursos destacados.
 
-RoboSats es experimental y, como tal, actualmente es respaldado por un [nodo coordinador experimental](https://amboss.space/node/{{site.robosats.node_id}}). La próxima [actualización de federación](https://github.com/RoboSats/robosats/pull/601) permite que cualquiera se convierta en un nodo coordinador y apoye la federación de RoboSats, creando así un libro de pedidos descentralizado pero unificado compuesto por miembros de la federación compitiendo entre sí para atraer a los comerciantes.
+RoboSats es experimental y, como tal, actualmente es respaldado por un [nodo coordinador experimental](https://amboss.space/node/{{site.robosats.node_id}}). La próxima [actualización de federación](https://github.com/Robosats-Federation/robosats/pull/601) permite que cualquiera se convierta en un nodo coordinador y apoye la federación de RoboSats, creando así un libro de pedidos descentralizado pero unificado compuesto por miembros de la federación compitiendo entre sí para atraer a los comerciantes.
 
 ## **Usando de la Red Lightning**
 

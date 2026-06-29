@@ -19,7 +19,7 @@ Advantages over a full over-the-internet RoboSats experience:
 1. Dramatically faster load times.
 2. Safer: you control what RoboSats client app you run.
 3. Access RoboSats safely from any browser / device. No need to use TOR if you are on your local network or using VPN: your node backend handles the torification needed for anonymization.
-4. Allows control over what P2P market coordinator you connect to (defaults to robosatsy56bwqn56qyadmcxkx767hnabg4mihxlmgyt6if5gnuxvzad.onion)
+4. Allows control over what P2P market coordinator you connect to (defaults to robosats7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion)
 
 # Future upgrades
 

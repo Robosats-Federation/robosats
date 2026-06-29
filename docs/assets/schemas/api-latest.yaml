@@ -8,7 +8,7 @@ info:
     altText: RoboSats logo
   description: |2+
 
-    REST API Documentation for [RoboSats](https://learn.robosats.org) - A Simple and Private LN P2P Exchange
+    REST API Documentation for [RoboSats](https://learn.robosats.app) - A Simple and Private LN P2P Exchange
 
     <p style='background-color:#fff0f0;padding:16px;border-radius:6px;border:2px solid #ffd3d3'>
     <span style='color:#f31f1f;font-weight:bold'>Note:</span>
@@ -29,7 +29,7 @@ paths:
         name: currency
         schema:
           type: integer
-        description: The currency id to filter by. Currency IDs can be found [here](https://github.com/RoboSats/robosats/blob/main/frontend/static/assets/currencies.json).
+        description: The currency id to filter by. Currency IDs can be found [here](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/static/assets/currencies.json).
           Value of `0` means ANY currency
       - in: query
         name: type
@@ -824,7 +824,7 @@ paths:
         Make sure you generate your token using cryptographically secure methods.
         Since the server only receives the hash of the
         token, it is responsibility of the client to create a strong token. Check
-        [here](https://github.com/RoboSats/robosats/blob/main/frontend/src/utils/token.ts)
+        [here](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/src/utils/token.ts)
         to see how the Javascript client creates a random strong token and how it validates entropy is optimal for tokens
         created by the user at will.
         The PGP key should be an EdDSA ed25519/cert,sign+cv25519/encr key.
@@ -1402,7 +1402,7 @@ components:
           maximum: 32767
         currency:
           type: integer
-          description: Currency id. See [here](https://github.com/RoboSats/robosats/blob/main/frontend/static/assets/currencies.json)
+          description: Currency id. See [here](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/static/assets/currencies.json)
             for a list of all IDs
         amount:
           type: string
@@ -1431,7 +1431,7 @@ components:
         payment_method:
           type: string
           default: not specified
-          description: Can be any string. The UI recognizes [these payment methods](https://github.com/RoboSats/robosats/blob/main/frontend/src/components/payment-methods/Methods.js)
+          description: Can be any string. The UI recognizes [these payment methods](https://github.com/Robosats-Federation/robosats/blob/active-maintenance/frontend/src/components/payment-methods/Methods.js)
             and displays them with a logo.
           maxLength: 70
         is_explicit:

@@ -26,7 +26,7 @@ function federationUrls(): string[] {
   }
 
   // web hosted frontend without coordinator
-  urls.push('robosatsy56bwqn56qyadmcxkx767hnabg4mihxlmgyt6if5gnuxvzad.onion');
+  urls.push('robosats7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion');
   return urls;
 }
 
@@ -85,7 +85,7 @@ const UnsafeAlert = (): React.JSX.Element => {
             </Link>
             <a> and visit the federation hosted </a>
             <Link
-              href='http://robosatsy56bwqn56qyadmcxkx767hnabg4mihxlmgyt6if5gnuxvzad.onion'
+              href='http://robosats7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion'
               target='_blank'
             >
               <b>Onion</b>

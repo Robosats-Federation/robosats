@@ -12,11 +12,11 @@ src: "_pages/es/contribute/02-languages.md"
 
 RoboSats es una forma de cambiar bitcoin por **cualquier moneda del mundo**. Por ello, muchos usuarios sólo encontrarán útil esta herramienta si está disponible en un idioma que entiendan. Traducir RoboSats a un nuevo idioma es una de las contribuciones más valiosas al proyecto. Pone la plataforma a disposición de nuevos públicos, aumenta el alcance de esta genial herramienta de libertad y, en consecuencia, incrementa la liquidez de la cartera de pedidos para que aún más usuarios apilen Sats en privado.
 
-No hay mucho texto en RoboSats; sin embargo, podría ser mejor dividir el trabajo con otro contribuyente. Puedes ponerte en contacto con las [comunidades RoboSats](https://learn.robosats.org/contribute/es/code/#canales-de-comunicación) y encontrar usuarios dispuestos a dividir la tarea.
+No hay mucho texto en RoboSats; sin embargo, podría ser mejor dividir el trabajo con otro contribuyente. Puedes ponerte en contacto con las [comunidades RoboSats](https://learn.robosats.app/contribute/es/code/#canales-de-comunicación) y encontrar usuarios dispuestos a dividir la tarea.
 
 ## Cómo contribuir con una nueva traducción
 
-Simplemente crea un nuevo archivo de traducción en `frontend/static/locales` [enlace a GitHub](https://github.com/RoboSats/robosats/tree/main/frontend/static/locales). En `locales` hay un único archivo con un diccionario json para cada idioma. Para crear una nueva traducción, simplemente copia `es.json` (el texto maestro) en un nuevo archivo con el nombre del idioma [código ISO 639 de dos caracteres](https://www.loc.gov/standards/iso639-2/php/English_list.php).
+Simplemente crea un nuevo archivo de traducción en `frontend/static/locales` [enlace a GitHub](https://github.com/Robosats-Federation/robosats/tree/active-maintenance/frontend/static/locales). En `locales` hay un único archivo con un diccionario json para cada idioma. Para crear una nueva traducción, simplemente copia `es.json` (el texto maestro) en un nuevo archivo con el nombre del idioma [código ISO 639 de dos caracteres](https://www.loc.gov/standards/iso639-2/php/English_list.php).
 
 ## Directrices
 

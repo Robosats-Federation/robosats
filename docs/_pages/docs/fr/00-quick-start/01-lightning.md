@@ -12,7 +12,7 @@ src: "_pages/docs/fr/00-quick-start/01-lightning.md"
 
 Le Réseau Lightning est un réseau de micropaiement hors chaîne (couche 2) qui propose des frais réduits et des paiements instantanés. RoboSats exploite les avantages des transactions hors chaîne pour offrir aux utilisateurs une expérience rapide et peu coûteuse ! Il existe de nombreuses ressources intéressantes pour en savoir plus sur le fonctionnement du Lightning Network. Consultez ["Maîtriser le réseau Lightning"](https://github.com/lnbook/lnbook) pour une de ces excellentes ressources.
 
-RoboSats est expérimental et, en tant que tel, est actuellement soutenu par un [nœud expérimental de coordinateur](https://amboss.space/node/0282eb467bc073833a039940392592bf10cf338a830ba4e392c1667d7697654c7e). La prochaine [mise à jour de la fédération](https://github.com/RoboSats/robosats/pull/601) permet à quiconque de devenir un nœud coordinateur et de soutenir la fédération RoboSats, créant ainsi une liste de transactions décentralisée mais unifiée composé de membres de la fédération en concurrence les uns avec les autres pour attirer les traders.
+RoboSats est expérimental et, en tant que tel, est actuellement soutenu par un [nœud expérimental de coordinateur](https://amboss.space/node/0282eb467bc073833a039940392592bf10cf338a830ba4e392c1667d7697654c7e). La prochaine [mise à jour de la fédération](https://github.com/Robosats-Federation/robosats/pull/601) permet à quiconque de devenir un nœud coordinateur et de soutenir la fédération RoboSats, créant ainsi une liste de transactions décentralisée mais unifiée composé de membres de la fédération en concurrence les uns avec les autres pour attirer les traders.
 
 ## **Utiliser le réseau Lightning**
 

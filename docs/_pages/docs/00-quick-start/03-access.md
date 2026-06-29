@@ -15,7 +15,7 @@ src: "_pages/docs/00-quick-start/03-access.md"
 A safe and very private way to access RoboSats federated client is through the Onion address. You need [TOR browser](/docs/tor/) and access via the link:
 
 >
-[<b>RoboSats</b>y56bwqn56qyadmcxkx767hnabg4mihxlmgyt6if5gnuxvzad.onion](http://robosatsy56bwqn56qyadmcxkx767hnabg4mihxlmgyt6if5gnuxvzad.onion/)
+[<b>RoboSats</b>7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion](http://robosats7kriiz4seodfs3nvwprqbpntibrtmouj7xkznmhokv7qkqqd.onion/)
 
 
 **Private:** Your connection is encrypted end-to-end and relaid by several layers of nodes, thus making tracking harder.
@@ -25,7 +25,7 @@ A safe and very private way to access RoboSats federated client is through the O
 
 RoboSats can be safely and privately accessed via the Android app. The app is available via the RoboSats GitHub release page:
 
-> [Download the <b>latest release</b> of the universal RoboSats APK for Android](https://github.com/RoboSats/robosats/releases)
+> [Download the <b>latest release</b> of the universal RoboSats APK for Android](https://github.com/Robosats-Federation/robosats/releases)
 
 ## <img style='width:36px;height:38px;-webkit-filter:grayscale(1);filter:grayscale(1);' src='/assets/vector/Itoopie.svg'/> Privately with I2P
 
@@ -37,7 +37,7 @@ I2P is another safe and private way to access RoboSats. You need [I2P browser](h
 
 There is an unsafe way to view the RoboSats order book without TOR that relies on third party tor2web services. With this URL, you can access RoboSats from any browser, but using this URL is **strongly ill-advised!**
 
-> [unsafe.robosats.org](https://unsafe.robosats.org)
+> [unsafe.robosats.app](https://unsafe.robosats.app)
 
 **Unsafe:** Your privacy can be compromised if you use the unsafe clearnet URL in a regular web browser.
 {: .notice--secondary}
@@ -46,9 +46,9 @@ If you use the clearnet URL, you should assume you are being spied on. However, 
 
 ## <i class="fa-solid fa-person-dots-from-line"></i> All-in-One URL
 
-To keep it simple, the URL "robosats.org" has been created to serve as an easy-to-remember and all-in-one link for browsers. If you are using TOR or I2P browser, then you are directed to the Onion or I2P site, respectively. Otherwise, you are directed to the unsafe clearnet site.
+To keep it simple, the URL "robosats.app" has been created to serve as an easy-to-remember and all-in-one link for browsers. If you are using TOR or I2P browser, then you are directed to the Onion or I2P site, respectively. Otherwise, you are directed to the unsafe clearnet site.
 
-> [<span style="font-size:larger;">robosats.org</span>](https://robosats.org)
+> [<span style="font-size:larger;">robosats.app</span>](https://robosats.app)
 
 ## Others
 
@@ -61,7 +61,7 @@ You can practice and test all of the functionalities in RoboSats without risk of
 
 There are several tor2web services that serve as mirrors in case one of them is unavailable:
 
-> [unsafe.robosats.org](https://unsafe.robosats.org/) <br/>
-> [unsafe.testnet.robosats.org](http://unsafe.testnet.robosats.org/)
+> [unsafe.robosats.app](https://unsafe.robosats.app/) <br/>
+> [unsafe.testnet.robosats.app](http://unsafe.testnet.robosats.app/)
 
 {% include improve %}
