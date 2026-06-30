@@ -1,11 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { Dispatch, SetStateAction, useContext, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Button, TextField, Grid, Paper, Typography } from '@mui/material';
-import { encryptMessage, decryptMessage } from '../../../../pgp';
+import { Button, TextField, Grid, Paper, Typography, Tooltip, IconButton } from '@mui/material';
+import { decryptMessage } from '../../../../pgp';
 
 // Icons
 import CircularProgress from '@mui/material/CircularProgress';
-import KeyIcon from '@mui/icons-material/Key';
 import { useTheme } from '@mui/system';
 import MessageCard from '../MessageCard';
 import ChatHeader from '../ChatHeader';
@@ -18,6 +17,9 @@ import {
 import { type UseGarageStoreType, GarageContext } from '../../../../contexts/GarageContext';
 import { type Order } from '../../../../models';
 import getSettings from '../../../../utils/settings';
+import { AttachFile, Send } from '@mui/icons-material';
+import PrivacyWarningDialog from '../PrivacyWarningDialog';
+import { ParsedFileMessage, parseImageMetadataJson } from '../../../../utils/nip17File';
 
 interface Props {
   order: Order;
@@ -26,13 +28,16 @@ interface Props {
   takerHashId: string;
   makerHashId: string;
   chatOffset: number;
+  error: string;
+  lastIndex: number;
   messages: EncryptedChatMessage[];
   setMessages: (messages: EncryptedChatMessage[]) => void;
-  turtleMode: boolean;
-  setTurtleMode: (state: boolean) => void;
-  onSendMessage: (content: string) => void;
+  onSendMessage: (content: string) => Promise<object | void>;
+  onSendFile: (file: File) => Promise<void>;
   peerPubKey?: string;
   setPeerPubKey: (peerPubKey: string) => void;
+  setError: Dispatch<SetStateAction<string>>;
+  setLastIndex: Dispatch<SetStateAction<number>>;
 }
 
 const audioPath =
@@ -40,7 +45,7 @@ const audioPath =
     ? 'file:///android_asset/static/assets/sounds'
     : '/static/assets/sounds';
 
-const EncryptedTurtleChat: React.FC<Props> = ({
+const EncryptedApiChat: React.FC<Props> = ({
   order,
   userNick,
   takerNick,
@@ -49,11 +54,14 @@ const EncryptedTurtleChat: React.FC<Props> = ({
   chatOffset,
   messages,
   peerPubKey,
+  error,
+  lastIndex,
   setPeerPubKey,
   setMessages,
-  setTurtleMode,
-  turtleMode,
   onSendMessage,
+  onSendFile,
+  setError,
+  setLastIndex,
 }: Props): React.JSX.Element => {
   const { t } = useTranslation();
   const theme = useTheme();
@@ -64,11 +72,12 @@ const EncryptedTurtleChat: React.FC<Props> = ({
   const [peerConnected, setPeerConnected] = useState<boolean>(false);
   const [value, setValue] = useState<string>('');
   const [waitingEcho, setWaitingEcho] = useState<boolean>(false);
-  const [lastSent, setLastSent] = useState<string>('---BLANK---');
   const [messageCount, setMessageCount] = useState<number>(0);
   const [serverMessages, setServerMessages] = useState<ServerMessage[]>([]);
-  const [lastIndex, setLastIndex] = useState<number>(0);
-  const [error, setError] = useState<string>('');
+  const [uploading, setUploading] = useState<boolean>(false);
+  const [imageUrls, setImageUrls] = useState<Record<number, string>>({});
+  const [privacyWarningOpen, setPrivacyWarningOpen] = useState<boolean>(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (messages.length > messageCount) {
@@ -123,46 +132,34 @@ const EncryptedTurtleChat: React.FC<Props> = ({
           robot.encPrivKey,
           slot.token,
         ).then((decryptedData) => {
-          setLastSent(decryptedData.decryptedMessage === lastSent ? '----BLANK----' : lastSent);
-          setLastIndex(lastIndex < dataFromServer.index ? dataFromServer.index : lastIndex);
+          setLastIndex((prev) => {
+            return prev < dataFromServer.index ? dataFromServer.index : prev;
+          });
           setMessages((prev: EncryptedChatMessage[]) => {
             const existingMessage = prev.find((item) => item.index === dataFromServer.index);
             if (existingMessage != null) {
               return prev;
             } else {
-              const x: EncryptedChatMessage = {
+              let fileMetadata: ParsedFileMessage | undefined;
+              let displayText = decryptedData.decryptedMessage;
+              const imgMeta = parseImageMetadataJson(displayText);
+              if (imgMeta) {
+                fileMetadata = imgMeta;
+                displayText = t('[Loading Encrypted Image]');
+              }
+
+              const message: EncryptedChatMessage = {
                 index: dataFromServer.index,
                 encryptedMessage: dataFromServer.message.split('\\').join('\n'),
-                plainTextMessage: decryptedData.decryptedMessage,
+                plainTextMessage: displayText,
                 validSignature: decryptedData.validSignature,
                 userNick: dataFromServer.nick,
                 time: dataFromServer.time,
+                fileMetadata,
               };
-              return [...prev, x].sort((a, b) => a.index - b.index);
+              return [...prev, message].sort((a, b) => a.index - b.index);
             }
           });
-        });
-      }
-      // We allow plaintext communication. The user must write # to start
-      // If we receive an plaintext message
-      else if (dataFromServer.message.substring(0, 1) === '#') {
-        setMessages((prev: EncryptedChatMessage[]) => {
-          const existingMessage = prev.find(
-            (item) => item.plainTextMessage === dataFromServer.message,
-          );
-          if (existingMessage != null) {
-            return prev;
-          } else {
-            const x: EncryptedChatMessage = {
-              index: prev.length + 0.001,
-              encryptedMessage: dataFromServer.message,
-              plainTextMessage: dataFromServer.message,
-              validSignature: false,
-              userNick: dataFromServer.nick,
-              time: new Date().toString(),
-            };
-            return [...prev, x].sort((a, b) => a.index - b.index);
-          }
         });
       }
     }
@@ -179,26 +176,13 @@ const EncryptedTurtleChat: React.FC<Props> = ({
         `Aye! You just sent your own robot robot.token  to your peer in chat, that's a catastrophic idea! So bad your message was blocked.`,
       );
       setValue('');
-    }
-    // If input string contains '#' send unencrypted and unlogged message
-    else if (value.substring(0, 1) === '#') {
-      const url = federation.getCoordinator(garage.getSlot()?.activeOrder?.shortAlias ?? '').url;
-      onSendMessage(value);
-      apiClient
-        .post(
-          url,
-          `/api/chat/`,
-          {
-            PGP_message: value,
-            order_id: order.id,
-            offset: lastIndex,
-          },
-          { tokenSHA256: slot?.getRobot()?.tokenSHA256 ?? '' },
-        )
+    } else {
+      setWaitingEcho(true);
+      onSendMessage(value)
         .then((response) => {
-          if (response != null) {
+          if (response) {
+            setPeerConnected(response.peer_connected);
             if (response.messages != null) {
-              setPeerConnected(response.peer_connected);
               setServerMessages(response.messages);
             }
           }
@@ -208,45 +192,65 @@ const EncryptedTurtleChat: React.FC<Props> = ({
           setValue('');
         });
     }
-    // Else if message is not empty send message
-    else if (value !== '' && Boolean(robot?.pubKey)) {
-      setWaitingEcho(true);
-      setLastSent(value);
-      onSendMessage(value);
-      encryptMessage(value, robot?.pubKey, peerPubKey ?? '', robot?.encPrivKey, slot?.token)
-        .then((encryptedMessage) => {
-          const url = federation.getCoordinator(
-            garage.getSlot()?.activeOrder?.shortAlias ?? '',
-          ).url;
-          apiClient
-            .post(
-              url,
-              `/api/chat/`,
-              {
-                PGP_message: String(encryptedMessage).split('\n').join('\\'),
-                order_id: order.id,
-                offset: lastIndex,
-              },
-              { tokenSHA256: slot?.getRobot()?.tokenSHA256 },
-            )
-            .then((response) => {
-              if (response != null) {
-                setPeerConnected(response.peer_connected);
-                if (response.messages != null) {
-                  setServerMessages(response.messages);
-                }
-              }
-            })
-            .finally(() => {
-              setWaitingEcho(false);
-              setValue('');
-            });
-        })
-        .catch((error) => {
-          setError(error.toString());
-        });
-    }
     e.preventDefault();
+  };
+
+  const clearFileInput = (): void => {
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
+  };
+
+  const handleAttachClick = (): void => {
+    // Clear any previous errors
+    setError('');
+    setPrivacyWarningOpen(true);
+  };
+
+  const handlePrivacyDialogClose = (confirmed: boolean): void => {
+    setPrivacyWarningOpen(false);
+    if (confirmed) {
+      // Trigger file input click - works on both web and Android (with native implementation)
+      fileInputRef.current?.click();
+    }
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    const file = e.target.files?.[0];
+    if (!file) {
+      // User cancelled file selection
+      clearFileInput();
+      return;
+    }
+
+    // Validate file size
+    const maxSize = 10 * 1024 * 1024; // 10MB
+    if (file.size > maxSize) {
+      setError(t('File too large. Maximum size is 10MB.'));
+      clearFileInput();
+      return;
+    }
+
+    // Validate file type
+    if (!file.type.startsWith('image/')) {
+      setError(t('Only image files are allowed.'));
+      clearFileInput();
+      return;
+    }
+
+    // File is valid, proceed with upload
+    setError(''); // Clear any previous errors
+    setUploading(true);
+    onSendFile(file)
+      .catch((err) => {
+        const errorMessage = err instanceof Error ? err.message : String(err);
+        setError(errorMessage);
+        console.error('File upload error:', err);
+      })
+      .finally(() => {
+        setUploading(false);
+        clearFileInput();
+      });
   };
 
   return (
@@ -258,12 +262,7 @@ const EncryptedTurtleChat: React.FC<Props> = ({
       spacing={0.5}
     >
       <Grid item>
-        <ChatHeader
-          connected={Boolean(peerPubKey)}
-          peerConnected={peerConnected}
-          turtleMode={turtleMode}
-          setTurtleMode={setTurtleMode}
-        />
+        <ChatHeader connected={Boolean(peerPubKey)} peerConnected={peerConnected} />
         <Paper
           elevation={1}
           style={{
@@ -287,6 +286,8 @@ const EncryptedTurtleChat: React.FC<Props> = ({
                   takerNick={takerNick}
                   takerHashId={takerHashId}
                   makerHashId={makerHashId}
+                  imageUrls={imageUrls}
+                  setImageUrls={setImageUrls}
                 />
               </li>
             );
@@ -317,35 +318,32 @@ const EncryptedTurtleChat: React.FC<Props> = ({
               }}
               fullWidth={true}
             />
+            <input
+              type='file'
+              ref={fileInputRef}
+              style={{ display: 'none' }}
+              accept='image/*'
+              onChange={handleFileChange}
+            />
+            <Tooltip title={peerPubKey === undefined ? t('Waiting for peer...') : ''}>
+              <span>
+                <IconButton
+                  disabled={uploading || peerPubKey === undefined}
+                  onClick={handleAttachClick}
+                  color='primary'
+                >
+                  {uploading ? <CircularProgress size={24} /> : <AttachFile />}
+                </IconButton>
+              </span>
+            </Tooltip>
             <Button
               disabled={waitingEcho || peerPubKey === undefined}
               type='submit'
               variant='contained'
               color='primary'
-              fullWidth={true}
+              loading={waitingEcho}
             >
-              {waitingEcho ? (
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    flexWrap: 'wrap',
-                    minWidth: '4.68em',
-                    width: '4.68em',
-                    position: 'relative',
-                    left: '1em',
-                  }}
-                >
-                  <div style={{ width: '1.2em' }}>
-                    <KeyIcon sx={{ width: '1em' }} />
-                  </div>
-                  <div style={{ width: '1em', position: 'relative', left: '0.5em' }}>
-                    <CircularProgress size={1.1 * theme.typography.fontSize} thickness={5} />
-                  </div>
-                </div>
-              ) : (
-                t('Send')
-              )}
+              <Send />
             </Button>
           </Grid>
           <Typography color='error' variant='caption'>
@@ -353,8 +351,9 @@ const EncryptedTurtleChat: React.FC<Props> = ({
           </Typography>
         </form>
       </Grid>
+      <PrivacyWarningDialog open={privacyWarningOpen} onClose={handlePrivacyDialogClose} />
     </Grid>
   );
 };
 
-export default EncryptedTurtleChat;
+export default EncryptedApiChat;
