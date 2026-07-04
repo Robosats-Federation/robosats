@@ -10,10 +10,10 @@ on:
         required: true
         type: string
   push:
-    branches: [ "main", "active-maintenance" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: ["frontend", "nodeapp"]
   pull_request:
-    branches: [ "main", "active-maintenance" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: ["frontend", "nodeapp"]
 
 jobs:

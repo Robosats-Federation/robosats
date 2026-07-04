@@ -9,6 +9,7 @@ on:
     branches:
       - main
       - active-maintenance
+      - stable/v0.8.4
     paths:
       - '**/*.js'
       - '**/*.ts'
@@ -17,6 +18,7 @@ on:
     branches:
       - main
       - active-maintenance
+      - stable/v0.8.4
     paths:
       - '**/*.js'
       - '**/*.ts'

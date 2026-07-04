@@ -4,12 +4,13 @@ on:
   workflow_dispatch:
   workflow_call:
   push:
-    branches: [ "main", "active-maintenance" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: ["api", "chat", "control", "robosats"]
   pull_request_target:
     branches:
       - main
       - active-maintenance
+      - stable/v0.8.4
     paths:
       - '**.py'
 
