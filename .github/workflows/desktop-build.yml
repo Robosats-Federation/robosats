@@ -7,10 +7,10 @@ on:
         required: true
         type: string
   push:
-    branches: [ "main" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: [ "desktopApp", "frontend" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: [ "desktopApp", "frontend" ]
 
 jobs:
