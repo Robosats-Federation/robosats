@@ -5,12 +5,14 @@ on:
     branches:
       - main
       - active-maintenance
+      - stable/v0.8.4
     paths:
       - '**.py'
   pull_request_target:
     branches:
       - main
       - active-maintenance
+      - stable/v0.8.4
     paths:
       - '**.py'
 

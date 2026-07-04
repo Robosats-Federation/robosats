@@ -9,10 +9,10 @@ on:
         type: string
         default: ''
   push:
-    branches: [ "main", "active-maintenance" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: [ "frontend" ]
   pull_request:
-    branches: [ "main", "active-maintenance" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: [ "frontend" ]
 
 concurrency:
