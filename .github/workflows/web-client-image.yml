@@ -10,10 +10,10 @@ on:
         required: true
         type: string
   push:
-    branches: [ "main" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: ["frontend", "web"]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: ["frontend", "web"]
 
 jobs:
@@ -22,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v5
+      with:
+        ref: ${{ github.event.pull_request.head.sha || github.ref }}
 
     - name: 'Download Basic main.js Artifact'
       if: inputs.semver == ''  # Only if workflow fired from frontend-build.yml
@@ -49,7 +51,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        images: recksato/robosats-web
+        images: ${{ secrets.DOCKER_IMAGE_NAME }}-web
         tags: |
             type=ref,event=pr
             type=ref,event=tag

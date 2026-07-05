@@ -4,11 +4,15 @@ on:
   push:
     branches:
       - main
+      - active-maintenance
+      - stable/v0.8.4
     paths:
       - '**.py'
   pull_request_target:
     branches:
       - main
+      - active-maintenance
+      - stable/v0.8.4
     paths:
       - '**.py'
 
@@ -22,6 +26,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.ref }}
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'

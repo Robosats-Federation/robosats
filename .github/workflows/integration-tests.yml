@@ -4,11 +4,13 @@ on:
   workflow_dispatch:
   workflow_call:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "active-maintenance", "stable/v0.8.4" ]
     paths: ["api", "chat", "control", "robosats"]
   pull_request_target:
     branches:
       - main
+      - active-maintenance
+      - stable/v0.8.4
     paths:
       - '**.py'
 
@@ -34,6 +36,8 @@ jobs:
     steps:
     - name: 'Checkout'
       uses: actions/checkout@v5
+      with:
+        ref: ${{ github.event.pull_request.head.sha || github.ref }}
 
     - name: 'Download static files Artifact'
       uses: dawidd6/action-download-artifact@v11
